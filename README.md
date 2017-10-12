@@ -72,7 +72,7 @@ passport.use(new SamlStrategy(
   * `validateInResponseTo`: if truthy, then InResponseTo will be validated from incoming SAML responses
   * `requestIdExpirationPeriodMs`: Defines the expiration time when a Request ID generated for a SAML request will not be valid if seen in a SAML response in the `InResponseTo` field.  Default is 8 hours.
   * `cacheProvider`: Defines the implementation for a cache provider used to store request Ids generated in SAML requests as part of `InResponseTo` validation.  Default is a built-in in-memory cache provider.  For details see the 'Cache Provider' section.
- * `generateUniqueID`: if set, override the function used to generate unique IDs for the `InResponseTo` attribute of generated requests.  
+  * `generateUniqueID`: if set, override the function used to generate unique IDs for the `InResponseTo` attribute of generated requests.  
  * **Passport**
   * `passReqToCallback`: if truthy, `req` will be passed as the first argument to the verify callback (default: `false`)
  * **Logout**
