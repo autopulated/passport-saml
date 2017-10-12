@@ -1,12 +1,7 @@
 {
   "name": "passport-saml",
-  "version": "0.15.0",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/bergie/passport-saml/raw/master/LICENSE"
-    }
-  ],
+  "version": "0.20.2",
+  "license" : "MIT",
   "keywords": [
     "saml",
     "adfs",
@@ -22,7 +17,8 @@
   "contributors": [
     "Michael Bosworth",
     "Herbert Vojčík",
-    "Peter Loer"
+    "Peter Loer",
+    "Mark Stosberg"
   ],
   "repository": {
     "type": "git",
@@ -32,24 +28,24 @@
   "dependencies": {
     "passport-strategy": "*",
     "q": "^1.5.0",
-    "xml-crypto": "^0.9.0",
-    "xml-encryption": "~0.10",
+    "xml-crypto": "^0.10.1",
+    "xml-encryption": "^0.11.0",
     "xml2js": "0.4.x",
-    "xmlbuilder": "^8.2.2",
+    "xmlbuilder": "^9.0.4",
     "xmldom": "0.1.x"
   },
   "devDependencies": {
     "body-parser": "^1.17.1",
-    "express": "4.x",
+    "express": "^4.16.2",
     "jshint": "*",
     "mocha": "*",
-    "passport": "0.3.x",
-    "request": "*",
+    "passport": "0.4.x",
+    "request": "^2.83.0",
     "should": "*",
     "sinon": "^2.1.0"
   },
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 4"
   },
   "scripts": {
     "test": "mocha",
